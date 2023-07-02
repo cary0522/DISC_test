@@ -1,0 +1,142 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    perspective: 500px;    
+}
+
+@keyframes filp{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+}
+
+@keyframes back{
+    0%{
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+    100%{
+        transform: trtateY(0deg);
+    }
+}
+
+.left{
+    width: 45%;
+    height: 400px;
+    background-color: rgba(255,255,255,.9);
+    background-image: url(https://picsum.photos/id/114/1500/800);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.zero{
+    z-index: 20;
+}
+
+.one{
+    z-index: 19;
+}
+
+.two{
+    z-index: 18;
+}
+
+.three{
+    z-index: 17;
+}
+
+.four{
+    z-index: 16;
+}
+
+.five{
+    z-index: 15;
+}
+
+.six{
+    z-index: 14;
+}
+
+.seven{
+    z-index: 13;
+}
+
+.eight{
+    z-index: 12;
+}
+
+.nine{
+    z-index: 11;
+}
+
+.ten{
+    z-index: 10;
+}
+
+.eleven{
+    z-index: 9;
+}
+
+.twelve{
+    z-index: 8;
+}
+
+.thirteen{
+    z-index: 7;
+}
+
+.fourteen{
+    z-index: 6;
+}
+
+.fifteen{
+    z-index: 5;
+}
+
+.sixteen{
+    z-index: 4;
+}
+
+.seventeen{
+    z-index: 3;
+}
+
+.eighteen{
+    z-index: 2;
+}
+
+.nineteen{
+    z-index: 1;
+}
+
+.twenty{
+    z-index: 0;
+}
+
+.right{
+    width: 45%;
+    height: 400px;
+    background-image: url(https://picsum.photos/id/38/1500/800);
+    object-fit: cover;
+}
+
+/* 
+.left:hover{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    z-index: -1;
+} */
+/* 
+.left:hover{
+    animation: filp 2s ease-in;
+} */
